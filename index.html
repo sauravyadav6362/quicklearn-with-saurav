@@ -49,7 +49,103 @@
             color: inherit;
         }
 
-        /* Utility Classes */
+```html
+<section class="classes-section">
+  <h2>Choose Your Class</h2>
+  <div class="class-grid">
+    <div class="class-card">
+      <h3>Class 6</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 7</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 8</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 9</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 10</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 11</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 12</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+  </div>
+</section>
+```
+
+```css
+.classes-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f5f7fb;
+}
+
+.classes-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.class-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.class-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #4f46e5;
+}
+
+.class-card p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+```
+
+Utility Classes */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -624,5 +720,100 @@
         const hiddenElements = document.querySelectorAll('.hidden');
         hiddenElements.forEach(el => observer.observe(el));
     </script>
+
+```html
+<section class="classes-section">
+  <h2>Choose Your Class</h2>
+  <div class="class-grid">
+    <div class="class-card">
+      <h3>Class 6</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 7</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 8</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 9</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 10</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 11</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+
+    <div class="class-card">
+      <h3>Class 12</h3>
+      <p>Math</p>
+      <p>Science</p>
+    </div>
+  </div>
+</section>
+```
+
+```css
+.classes-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f5f7fb;
+}
+
+.classes-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.class-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.class-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #4f46e5;
+}
+
+.class-card p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 </body>
 </html>
